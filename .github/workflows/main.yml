@@ -9,13 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Deploy to SiteGround
+      - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SITEGROUND_HOST }}
           username: ${{ secrets.SITEGROUND_USERNAME }}
-          password: ${{ secrets.SITEGROUND_PASSWORD }}
-          local: ./
-          remote: /staging2.kidstart.sg/public_html/test # Adjust the path
+          key: ${{ secrets.SITEGROUND_KEY }}
+          port: ${{ secrets.SITEGROUND_PORT }}
+          script: whoami
