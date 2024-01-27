@@ -1,15 +1,20 @@
-name: remote ssh command
-on: [push]
+on:
+  push:
+    branches:
+      - master
+name: 🚀 Deploy website on push
 jobs:
-  build:
-    name: Build
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@v1.0.3
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          host: "ssh.kidstart.sg"
-          username: "u1441-4dd9gxp75nrt"
-          key: ${{ secrets.SITEGROUND_KEY }}
-          port: "18765"
-          script: whoami
+          server: ftp.kidstart.sg
+          username: edgerunner@kidstart.sg
+          password: bf91:2{FdR3(
+          server-dir: /staging2.kidstart.sg/public_html/test
