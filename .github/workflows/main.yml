@@ -1,19 +1,14 @@
-name: Deploy to SiteGround
-
-on:
-  push:
-    branches: [master] # Adjust the branch name if needed
-
+name: remote ssh command
+on: [push]
 jobs:
-  deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
-
     steps:
-      - name: executing remote ssh commands using ssh key
+      - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.SITEGROUND_HOST }}
-          username: ${{ secrets.SITEGROUND_USERNAME }}
-          key: ${{ secrets.SITEGROUND_KEY }}
-          port: ${{ secrets.SITEGROUND_PORT }}
+          host: "ssh.kidstart.sg"
+          username: "u1441-4dd9gxp75nrt"
+          port: "18765"
           script: whoami
