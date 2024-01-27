@@ -8,34 +8,7 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: "ssh.kidstart.sg"
-          username: "u1441-4dd9gxp75nrt"
-          port: "18765"
-          key: "-----BEGIN RSA PRIVATE KEY-----
-MIIEpQIBAAKCAQEA0St2JVFdmyZRLAsCEVRKuvcCO0l5NnisnpY/Uak1mqYX1wf9
-i538D/CQejhJLftRV26Me4Iu+WVd+W8ABIRZ9RNGzT+BCpD7+u0KT+rY/wfjtAIs
-8jMvRu+IZJaMtpavfOwgQ64l1iIQ9itHuOfXSe9GxnBcWlWNiEoZGZ1d6FOWOy5T
-8gy7dDMR5BqPi7Y9L6EqmOL72B4brByqIItvelTB01w9DiejY+M66OGKjdCyTx38
-JLShEiAVH63vsC6mDrg7h48q4J4FwWoFqyaKs668RXboSSm0cZnHdZSkaWfiwGUo
-iOr4qu1/1huL2fN1RNp5W0o6Q7x9F7MeFNxyvQIDAQABAoIBAGxoKA1jRC5bB4ra
-EbJFi42m42Myyz2uAVkX6a07E2sZVhW+MGwh7zebqGWPsm3AaQH1a52/dPUQ0kmq
-e8nbhnv8B5/sn8aIKfB81fFheCGFR0BOOFk2qfQLxRbM6BThuAX4oygwo699bGkJ
-OVzd27iX6IiER3kSCg5uyN97reXwLGzYtbSf56WwVF2mGofLgocYeBnGU+p2tjbs
-5WYeKCp62ny54726TSPzQ/QgafDYnnecWxSC1IkItQO0z7rtlFD7B1faa9e1Y0KJ
-phPof5MKkIJwzv5ZkRqn7phtIhzAbdtU1xSWX5zyGjsOvWsX9JrWUWJNIZmUiiJq
-xkO4t8ECgYEA7CLLs3K0tqyI1fWZGwbmTj5dzdMK1uhFJrSmO2NBMuiq7jpXez+D
-eEovIHIymao1/YRCXdthy3RKqeYYUcOmOVLcRq0fbNVdjFC0PCGb913ICmfA/Zb6
-uT1LM1GqsEKUlEI6ZLr1XoDDxVDlCZMcdNCF8Pp6f03qsuuH+1bCh7UCgYEA4sPy
-o4hFP+cf1xo/IO9PHAJCTFcnSNofC6AduGIBfOJvzMHhjlUs7WLPEkC/BjlmlfrJ
-Y4WW9eflvlbb+JSRHO2rFZ4Fp5Fa5EElJgi3JydWOt15fWLvkcp3Hjbotq5hgllO
-XcYMuVuTz1BH+dgYvcbOwA51d/OOrtI+8Auak+kCgYEA6NxXbJrNQudZ+US8uz5O
-lxJBhtt7cPqUVtsGosH6Za20AkFeS5gSmejuGF0FMSv9Ggf3On9BLVV825agnOEH
-ZrgjqT7IIpc2LUzYsAOkvoeo4Tn3wxvEHDApnG4ImNDPnHTDCNqlZZAtfsOLWanN
-AhUwQLeBXVEFBXPnISAprZECgYEAi1TypWB5jEYq3jQWTdo8tWz954I1dSHwqWf8
-Wup9F4raPulx+c6ECGgJ66E0vlJOoiCx1SCkHPwbwdQE3LwMXcX6tRGfT9KUEmOk
-u7XnM3uMFCc5Gr3Ljbzla/85BeYnq7vL1vp1nv6R13PwhactrI2XQ5KewtE3/lrY
-qQ24MOECgYEAgBXFWQoSBecaZhmMjkdaCTNR9ALyNoI9/Ff6tuOcAxRL1ESLK2ML
-OLgwO+UAwOzvb22QkSsFfV/gwUO2i+yExj9yRmoYWx383pLDYQRFLPNxnajrRZSH
-1tSkuJCczD+N8g6nZW/BrBmuSWNb3ggUR5y8L4fop93L93Ki7ZTewNw=
------END RSA PRIVATE KEY-----"
+          host: "ftp.kidstart.sg"
+          username: "edgerunner@kidstart.sg"
+          password: "bf91:2{FdR3("
           script: whoami
