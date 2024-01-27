@@ -17,4 +17,4 @@ jobs:
           server: ftp.kidstart.sg
           username: edgerunner@kidstart.sg
           password: bf91:2{FdR3(
-          server-dir: /staging2.kidstart.sg/public_html/test
+          server-dir: /staging2.kidstart.sg/public_html/test/
