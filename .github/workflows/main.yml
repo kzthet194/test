@@ -14,7 +14,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ftp.kidstart.sg
-          username: edgerunner@kidstart.sg
-          password: bf91:2{FdR3(
-          server-dir: /staging2.kidstart.sg/public_html/test/
+          server: ${{ secrets.SITEGROUND_HOST }}
+          username: ${{ secrets.SITEGROUND_USERNAME }}
+          password: ${{ secrets.SITEGROUND_PASSWORD }}
+          server-dir: ${{ secrets.SITEGROUND_DIR }}
